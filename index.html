@@ -14,20 +14,23 @@
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+    tailwind.config = {
         theme: {
-            extend: {
+        extend: {
             colors: {
-                clifford: '#da373d',
-            }
-            }
+            clifford: '#da373d',
+            },
+            fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+            },
         }
-        }
+      }
+    }
     </script>
     <!-- Font Awesome (Free, CDN version) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body class="font-manrope">
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- header section -->
@@ -62,9 +65,7 @@
                       </div>
                 </div>
             </div>
-
         </header>
-
         <!-- features products section -->
          <section class="py-8 lg:py-24">
             <!-- title -->
